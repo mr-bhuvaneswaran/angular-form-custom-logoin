@@ -1,3 +1,7 @@
 <div class="container">
-    <app-custom-form *ngFor="let json of formJson" [inputJson]="json" (onUserSaved)="onUserCreation($event)"></app-custom-form>
+    <app-custom-form [inputJson]="inputJson['login']" (onUserSaved)="onUserCreation($event)"></app-custom-form>
+    <app-custom-form [inputJson]="inputJson['distributordetails']" (onUserSaved)="onUserCreation($event)"></app-custom-form>
+    <app-custom-form [inputJson]="inputJson['vendordetails']" (onUserSaved)="onUserCreation($event)"></app-custom-form>
+    <app-custom-form [inputJson]="inputJson['marketingdetails']" (onUserSaved)="onUserCreation($event)"></app-custom-form>
+
 </div>

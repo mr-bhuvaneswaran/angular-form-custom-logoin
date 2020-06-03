@@ -121,7 +121,6 @@ export class AppComponent  {
   constructor() { }
 
   ngOnInit() {
-    this.formJson = Object.keys(this.inputJson).map(key => this.inputJson[key]);
   }
 
   onUserCreation(userData) {
