@@ -1,0 +1,10 @@
+ .container{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+
+ app-custom-form{
+    margin-right: 60px;
+    margin-bottom: 60px;
+ }

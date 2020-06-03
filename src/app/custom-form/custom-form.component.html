@@ -1,0 +1,31 @@
+<mat-card class="inv-card">
+    <mat-card-content>
+      <form class="inv-form" [formGroup]="userCreationForm" (ngSubmit)="onSubmit()">
+        <div class="form-body">
+          <mat-form-field class="inv-full-width" *ngIf="isControlAvailable('firstname')">
+            <mat-label>First name*</mat-label>
+            <input matInput type="text" formControlName="firstname">
+          </mat-form-field>
+  
+          <mat-form-field class="inv-full-width" *ngIf="isControlAvailable('lastname')">
+            <mat-label>lastname*</mat-label>
+            <input matInput type="text" formControlName="lastname">
+          </mat-form-field>
+          <mat-form-field class="inv-full-width" *ngIf="isControlAvailable('emailid')">
+            <mat-label>email*</mat-label>
+            <input matInput type="email" formControlName="emailid">
+          </mat-form-field>
+          <mat-form-field class="inv-full-width" *ngIf="isControlAvailable('password')">
+            <mat-label>password*</mat-label>
+            <input matInput  [type]="hide ? 'password' : 'text'" formControlName="password">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </mat-form-field>
+          <div class="inv-buttons">
+            <button mat-raised-button color="primary" [disabled]="userCreationForm.invalid" type="submit">Create User</button>
+          </div>
+          
+        </div>
+      </form>
+    </mat-card-content>
+  
+  </mat-card>

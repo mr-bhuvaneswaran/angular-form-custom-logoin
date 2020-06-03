@@ -1,0 +1,22 @@
+.inv-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.inv-full-width {
+    width: 100%;
+}
+
+.inv-buttons>button {
+    margin-right: 1.2rem;
+}
+
+.inv-card {
+    max-width: 400px;
+}
+
+mat-icon{
+    cursor: pointer;
+}
+  
